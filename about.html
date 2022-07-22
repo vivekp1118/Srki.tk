@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <title>About Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js "></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg text-uppercase">
+
+    <a class="navbar-brand" href="index.html">Srki.tk</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="syllabus.html">Syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notes.html">Notes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="code.html">Assignment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 id="h4">
+    About Us.
+  </h1>
+  <p class="ab_text"> Hello, everyone you are most welcome here from our side, We are student of SRKI in SYCS, Kailash
+    Pradhan and Vivek Prajapati .We are passionate towards Development and learnning new technologies. The main reason
+    for Development this website is to provide Lecture Notes , Assignment and Updates , that are related to our college.
+  </p>
+
+  <div class="container one">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="card">
+          <div class="card-body text-center">
+            <div class="card-img pt-2 pb-3"> <img src="image/IMG_20220607_173048.jpg"> </div>
+            <div class="name h5">Vivek Prajapati</div>
+            <div class="testimonial"> A creative and innovative Developer , passionate about building advanced designs
+              and solutions. Proficient in JAVASCRIPT, CSS , REACT and SQL.
+            </div>
+            <div>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="https://api.Whatsapp.com/send?phone=9327667270"
+                    class="social-link"><i class="fa fa-whatsapp"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/vivek-prajapati-ba1b8020a/"
+                    class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://instagram.com/vivekp1118?igshid=YmMyMTA2M2Y="
+                    class="social-link"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="card">
+          <div class="card-body text-center">
+            <div class="card-img pt-2 pb-3"> <img src="image/IMG_20220226_172249.jpg" /> </div>
+            <div class="name h5">Kailash Pradhan</div>
+            <div class="testimonial">An enthusiastic fresher with highly motivated and leadership skills Expert in
+              implementation of each step of project. Proficient in JAVA , PYTHON , C++ and SQL.</div>
+            <div>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="https://api.Whatsapp.com/send?phone=919265523353"
+                    class="social-link"><i class="fa fa-whatsapp"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/imkailash/" class="social-link"><i
+                      class="fa fa-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://instagram.com/kailash__pradhan?igshid=YmMyMTA2M2Y="
+                    class="social-link"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box"></div>
+  <footer id="sticky-footer">
+    <div class=" text-center">
+      <small>Copyright &copy; Srki.tk 2020. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="vanilla.js"></script>
+  <script>
+
+    if ($(window).width() < 768) {
+      let destroyBox = document.querySelector("#destroy-box");
+      VanillaTilt.init(destroyBox);
+
+      document.querySelector("#destroy-button").addEventListener("click", function () {
+        destroyBox.vanillaTilt.destroy();
+      });
+
+      document.querySelector("#enable-button").addEventListener("click", function () {
+        VanillaTilt.init(destroyBox);
+      });
+
+    }
+    else {
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        maxglare: 1,
+      });
+    }
+  </script>
+</body>
+
+</html>
